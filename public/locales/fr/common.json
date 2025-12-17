@@ -1,0 +1,21 @@
+{
+  "welcome": "Bienvenue",
+  "language": "Langue",
+  "dashboard": "Tableau de bord",
+  "reports": "Rapports",
+  "system": "Système",
+  "settings": "Paramètres",
+  "theming": "Thème",
+  "profile": "Profil",
+  "station": "Station",
+  "portal": "Portail ( Protégé )",
+  "users": "Utilisateurs",
+  "component": "Composant",
+  "logout": "Déconnexion",
+  "navUser": {
+    "account": "Compte",
+    "billing": "Facturation",
+    "notifications": "Notifications",
+    "logout": "Déconnexion"
+  }
+}

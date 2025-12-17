@@ -1,0 +1,15 @@
+.container {
+  @apply top-0 sticky !min-w-full bg-white py-2 px-4 h-[65px] text-justify flex align-middle items-center justify-start;
+
+  .pageInfo {
+    @apply flex align-middle items-center gap-4;
+  }
+
+  .dp {
+    @apply flex align-middle items-center bg-primary-mid rounded-full text-center justify-center text-primary-menu border-primary-text !size-[40px];
+  }
+}
+
+.emailHolder {
+  @apply mt-3 pb-10;
+}

@@ -1,0 +1,23 @@
+.container {
+  @apply flex max-h-screen min-h-screen flex-row overflow-hidden relative w-full;
+
+  .sidebarContainer {
+    @apply transition-[left] ease-in-out duration-300;
+  }
+
+  .sidebarOpen {
+    @apply left-0 z-10;
+  }
+
+  .mainContainer {
+    @apply flex-1 flex flex-col relative transition-all ease-in-out duration-300;
+
+    // &.mainContainerSidebarOpen {
+    //   @apply ml-60; // 240px sidebar width
+    // }
+
+    .content {
+      @apply px-7 pt-6 flex-1 block bg-white overflow-y-scroll;
+    }
+  }
+}

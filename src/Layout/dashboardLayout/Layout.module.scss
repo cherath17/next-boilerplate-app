@@ -1,0 +1,23 @@
+.container {
+  @apply flex max-h-screen min-h-screen flex-row relative p-4 w-full overflow-hidden;
+
+  .sidebarContainer {
+    @apply transition-[left] ease-in-out duration-300;
+  }
+
+  .sidebarOpen {
+    @apply left-0 z-10;
+  }
+
+  .mainContainer {
+    @apply flex-1 flex flex-col relative transition-all ease-in-out duration-300 rounded-xl overflow-hidden;
+
+    // &.mainContainerSidebarOpen {
+    //   @apply ml-60; // adjust to sidebar width, e.g., 240px
+    // }
+
+    .content {
+      @apply p-4 flex-1 block bg-white overflow-y-scroll;
+    }
+  }
+}

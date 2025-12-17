@@ -1,0 +1,11 @@
+.overlay {
+  @apply fixed backdrop-blur-[2px] bg-white flex items-center justify-center z-[9999] inset-0;
+  backdrop-filter: blur(10px);
+
+  .loaderBox {
+    @apply flex items-center gap-4 px-8 py-6 rounded-xl;
+  }
+  .spinner {
+    @apply w-12 h-12;
+  }
+}

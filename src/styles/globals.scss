@@ -1,0 +1,223 @@
+@import url("primereact/resources/primereact.min.css");
+@import url("primeicons/primeicons.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./variables.scss";
+
+.shadow-3xl {
+  --tw-shadow: 0 3px 10px
+    rgb(var(--shadow-rgb, 0 0 0) / var(--shadow-opacity-strong, 0.25));
+
+  --tw-shadow-colored: 0 3px 10px
+    rgb(var(--tw-shadow-color) / var(--shadow-opacity-strong, 0.25));
+
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.focus-visivle {
+  @apply focus:outline-none hover:outline-none;
+}
+
+.normal_title {
+  @apply text-[#ff0000];
+}
+
+body {
+  @apply bg-primary-bgLight m-0 p-0;
+}
+
+.bg-popover {
+  @apply bg-white;
+}
+
+// Auth
+.auth_title {
+  @apply text-lg font-medium;
+}
+.auth_desc {
+  @apply text-base font-medium;
+}
+
+.themeswitcher-select {
+  @apply min-w-[280px];
+}
+
+[data-active="true"] {
+  @apply bg-primary-bgLight text-primary-menu;
+}
+
+// .theme-color-placeholder {
+//   @apply flex gap-2 align-middle items-center;
+
+//   .theme-color {
+//     @apply size-[12px] rounded-full;
+//   }
+
+//   .bootstrap4-light-blue {
+//     @apply bg-[#007bff];
+//   }
+
+//   .md-light-deeppurple {
+//     @apply bg-[#673AB7];
+//   }
+
+//   .mira {
+//     @apply bg-[#5e81ac];
+//   }
+
+//   .nano {
+//     @apply bg-[#1174c0];
+//   }
+
+//   .tailwind-light {
+//     @apply bg-[#4f46e5];
+//   }
+
+//   .lara-light-cyan {
+//     @apply bg-[#06b6d4];
+//   }
+
+//   .saga-blue {
+//     @apply bg-[#2196f3];
+//   }
+
+//   .lara-light-amber {
+//     @apply bg-[#f59e0b];
+//   }
+// }
+
+.p-card-title {
+  @apply text-primary-menu;
+}
+
+// Card
+.p-card .p-card-body {
+  @apply cursor-pointer;
+}
+
+// Breadcrumb
+.custom_breadcrumbs {
+  .p-breadcrumb {
+    @apply border-0 bg-transparent p-0 m-0;
+
+    a {
+      @apply text-primary-menu no-underline hover:underline;
+    }
+  }
+}
+
+.icons path {
+  fill: var(--menu-grup-light);
+}
+
+.overlay-container {
+  @apply w-[320px] pt-3;
+
+  .p-overlaypanel-content {
+    @apply p-5 !important;
+
+    .overlay-fields {
+      @apply flex flex-col gap-6;
+    }
+
+    .overlay-profile {
+      @apply flex gap-[14px] border-b-[1px] border-b-gray-50 pb-[16px];
+
+      .user-profile {
+        @apply w-[80%];
+
+        .name {
+          @apply font-[500] text-black text-[14px] leading-[20px] capitalize;
+        }
+
+        .email {
+          @apply font-[400] text-text-secondary text-[12px] leading-[18px] italic !important;
+        }
+      }
+    }
+
+    .set-container {
+      @apply mt-[10px] flex gap-[8px] items-center text-center capitalize pt-[10px] pb-[20px] border-b-[1px] border-b-gray-50 cursor-pointer;
+
+      .setting-name {
+        @apply font-[500] text-[14px] leading-[18px];
+      }
+    }
+  }
+
+  .logout-btn {
+    @apply h-[36px] min-w-full bg-primary-bgLight flex items-center justify-center gap-[8px] mt-[10px];
+
+    .label {
+      @apply font-[500] text-[14px] leading-[18px] text-text-secondary capitalize rounded-lg;
+    }
+  }
+}
+
+.p-float-label .p-dropdown {
+  @apply w-full;
+}
+
+.user-button-color {
+  @apply ml-auto capitalize bg-primary flex items-center rounded-lg !size-[40px] justify-center;
+}
+
+// 404 Page Styles
+
+.notfound_layout {
+  @apply grid min-h-screen place-items-center bg-gray-900 px-6 py-24 sm:py-32 lg:px-8;
+}
+
+/* TEXT CENTER WRAPPER */
+.notfound_wrapper {
+  @apply text-center;
+}
+
+/* 404 CODE */
+.notfound_code {
+  @apply text-base font-semibold text-indigo-400;
+}
+
+/* PAGE TITLE */
+.notfound_title {
+  @apply mt-4 text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl;
+}
+
+/* MESSAGE */
+.notfound_message {
+  @apply mt-6 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8;
+}
+
+/* ACTION BUTTON WRAPPER */
+.notfound_actions {
+  @apply mt-10 flex items-center justify-center gap-x-6;
+}
+
+/* HOME BUTTON */
+.notfound_homeBtn {
+  @apply rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm  font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500;
+}
+
+/* SUPPORT LINK */
+.notfound_supportLink {
+  @apply text-sm font-semibold text-white;
+}
+
+.component_layout {
+  @apply grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 gap-5 p-2 max-h-[calc(100vh-120px)] overflow-auto;
+}
+
+.component_card {
+  @apply flex flex-col gap-3;
+  .title {
+    @apply text-primary-menu text-2xl font-semibold capitalize;
+  }
+}
+
+.user_info {
+  @apply w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center font-medium text-sm;
+}

@@ -1,0 +1,22 @@
+.main_container {
+  @apply flex items-center justify-center min-h-screen bg-primary-bgLight;
+
+  .login_box {
+    @apply bg-white px-12 py-[90px] rounded-lg shadow-md w-full max-w-md;
+
+    h2 {
+      @apply text-2xl font-semibold mb-6 text-center;
+    }
+
+    .form_group {
+      @apply mb-4;
+
+      label {
+        @apply block mb-1 text-gray-700;
+      }
+      input {
+        @apply w-full px-3 py-2 rounded;
+      }
+    }
+  }
+}

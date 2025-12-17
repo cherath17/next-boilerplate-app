@@ -1,0 +1,21 @@
+{
+  "welcome": "Welcome",
+  "language": "Language",
+  "dashboard": "Dashboard",
+  "reports": "Reports",
+  "system": "System",
+  "settings": "Settings",
+  "theming": "Theming",
+  "profile": "Profile",
+  "station": "Station",
+  "portal": "Portal ( Protected )",
+  "users": "Users",
+  "component": "Component",
+  "logout": "Logout",
+  "navUser": {
+    "account": "Account",
+    "billing": "Billing",
+    "notifications": "Notifications",
+    "logout": "Log out"
+  }
+}

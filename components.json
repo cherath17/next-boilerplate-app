@@ -1,0 +1,19 @@
+{
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/styles/globals.scss",
+    "baseColor": "zinc",
+    "cssVariables": true
+  },
+  "iconLibrary": "lucide",
+  "aliases": {
+    "components": "@template/ui",
+    "ui": "@template/ui",
+    "utils": "@template/utils/utils",
+    "lib": "@template/lib",
+    "hooks": "@template/hooks"
+  }
+}
